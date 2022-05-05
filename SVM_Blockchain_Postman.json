@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "0b774cf3-ac0b-488c-b321-ebaa2b8fe62c",
+		"name": "SVM Fabric",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register A",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{userId}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register B",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{userId}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Push A",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{userId}}\",\n    \"data\": {\n        \"drinkDrive\": 6,\n        \"overSpeeding\": 2,\n        \"trafficLight\": 8,\n        \"accident\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/push",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"push"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Push B",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{userId}}\",\n    \"data\": {\n        \"vehicleAge\": 3,\n        \"vehicleType\": 2,\n        \"driverAge\": 43\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/push",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"push"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{userId}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/get",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Train Dataset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://svm-model-trainer--hyp3r5pace.repl.co/train",
+					"protocol": "https",
+					"host": [
+						"svm-model-trainer--hyp3r5pace",
+						"repl",
+						"co"
+					],
+					"path": [
+						"train"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
