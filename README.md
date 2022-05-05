@@ -6,17 +6,17 @@ In this project we have used consortium blockchain as a shared database between 
 
 Follow the stepts shown below to run the project
 
-* Start network and deploy chaincode (smart contracts)
+Start network and deploy chaincode (smart contracts)
 
 ```bash
 ./startFabric.sh
 ```
 
-* Move to `server` folder and start servers. We have 2 servers, 1 for each organization.
+Move to `server` folder and start servers. We have 2 servers, 1 for each organization.
 
 ```bash
 cd server
-``
+```
 
 Start server for org B.
 
@@ -30,7 +30,7 @@ Start other server in a new terminal window or tab
 node serverB.js
 ```
 
-* Each org has an MSP (Membership Service Provider) that gives access to the blockchain network by giving client or admin certificate to the users. We first enroll `admin` ID on each server and then using this `admin` we can register other users.
+Each org has an MSP (Membership Service Provider) that gives access to the blockchain network by giving client or admin certificate to the users. We first enroll `admin` ID on each server and then using this `admin` we can register other users.
 
 ```bash
 node enrollAdminA.js && node enrollAdminB.js
