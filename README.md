@@ -37,3 +37,11 @@ node enrollAdminA.js && node enrollAdminB.js
 ```
 
 Client registerations are handled by the REST APIs created. Now you can interact with the servers at port 3000 and 3001, by making API calls. Example Postmant collections is given in the root folder that you can import make the required calls.
+
+## Collaborators
+
+The project is created by the collaboration of the following developers.
+* Sameer Kumar Kushwaha
+* Raj Ranjan
+* Soumyajit Deb 
+* Puneet Verma
